@@ -31,4 +31,4 @@ MySignal:Fire("Fired again!")
 MySignal:DisconnectAll()
 
 -- Fire again (no output since all listeners are removed)
-MySignal:Fire("This won't be seen")
+MySignal:Fire("This won't be seen")\

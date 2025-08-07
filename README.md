@@ -24,7 +24,7 @@
 ```lua
 -- Create a new signal instance named "OnSomethingHappened"
 -- This will act like a custom event that you can fire and listen to
-local MySignal = fembindables.new("OnSomethingHappened")
+local MySignal = fembindables.new()
 
 -- Connect the first listener (callback function) to the signal
 -- This function will be called whenever MySignal:Fire(...) is called

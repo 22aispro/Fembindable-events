@@ -21,8 +21,6 @@
 
 ## 🚀 Usage
 
-### ➕ Create a New Signal
-
 ```lua
 -- Create a new signal instance named "OnSomethingHappened"
 -- This will act like a custom event that you can fire and listen to

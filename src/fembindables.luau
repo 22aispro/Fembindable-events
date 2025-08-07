@@ -30,7 +30,6 @@ function fembindables:Connect(fn)
 end
 
 function fembindables:Fire(...)
-	if not self._loaded then return end
 	for i = #self._connections, 1, -1 do
 		local conn = self[i]
 		if conn._connected then

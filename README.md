@@ -63,8 +63,10 @@ connection1:Disconnect()
 MySignal:Fire("Fired again!")
 ```
 
--- Output:
--- Listener 2 received: Fired again!
+### Output:
+```md
+# Listener 2 received: Fired again!
+```
 
 ### 🔁 Disconnect All Listeners
 ## Remove all listeners at once.
@@ -77,9 +79,9 @@ MySignal:DisconnectAll()
 ```lua
 MySignal:Fire("Event Fired!")
 ```
-
+### Output:
 ```md
-# Output: (no output)
+ # no output
 ```
 
 ### NOTICE:

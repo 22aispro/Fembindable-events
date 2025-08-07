@@ -21,26 +21,29 @@
 
 ## 🚀 Usage
 
+### Create a signal
 ```lua
--- Create a new signal instance named "OnSomethingHappened"
--- This will act like a custom event that you can fire and listen to
 local MySignal = fembindables.new()
+```
 
--- Connect the first listener (callback function) to the signal
--- This function will be called whenever MySignal:Fire(...) is called
+### 🔗 Connect listeners
+## Connect listeners (callbacks) to your signal using Connect. Each listener will be called when the signal fires.
+```lua
 local connection1 = MySignal:Connect(function(message)
 	print("Listener 1 received:", message)
 end)
 
--- Connect a second listener to the same signal
--- Multiple functions can listen to the same signal independently
 local connection2 = MySignal:Connect(function(message)
 	print("Listener 2 received:", message)
 end)
+```
 
--- Fire the signal with a message argument
--- Both listeners will receive this message and print it
+
+### 🔥 Fire the Signal
+## Trigger the signal with ```Fire```, passing any arguments to the listeners.
+```lua
 MySignal:Fire("Event Fired!")
+```
 
 -- Output:
 -- Listener 1 received: Event Fired!

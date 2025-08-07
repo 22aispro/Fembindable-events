@@ -32,9 +32,7 @@ end
 function fembindables:Fire(...)
 	for i = #self, 1, -1 do
 		local conn = self[i]
-		if conn._connected then
-			task.spawn(conn._callback,...)
-		end
+		task.spawn(conn._callback,...)
 	end
 end
 

@@ -1,3 +1,5 @@
+-- !strict
+
 local fembindables = {}
 fembindables.__index = fembindables
 
@@ -18,7 +20,7 @@ function femconnection:Disconnect()
 	end
 end
 
-function fembindables.new()
+function fembindables.new(flag: string)
 	local self = setmetatable({}, fembindables)
 	return self
 end
@@ -30,7 +32,7 @@ function fembindables:Connect(fn)
 end
 
 function fembindables:Fire(...)
-	for i = #self._connections, 1, -1 do
+	for i = #self, 1, -1 do
 		local conn = self[i]
 		if conn._connected then
 			task.spawn(conn._callback,...)

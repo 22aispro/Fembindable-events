@@ -67,3 +67,5 @@ MySignal:Fire("This won't be seen")
 
 -- Output: (no output)
 ```
+### NOTICE:
+## To use events in other scripts you can make a module that holds the events.

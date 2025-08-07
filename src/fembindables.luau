@@ -18,7 +18,7 @@ function femconnection:Disconnect()
 	end
 end
 
-function fembindables.new(flag: string)
+function fembindables.new()
 	local self = setmetatable({}, fembindables)
 	return self
 end

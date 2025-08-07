@@ -45,30 +45,42 @@ end)
 MySignal:Fire("Event Fired!")
 ```
 
--- Output:
--- Listener 1 received: Event Fired!
--- Listener 2 received: Event Fired!
+### Output:
+```md
+# Listener 1 received: Event Fired!
+# Listener 2 received: Event Fired!
+```
 
--- Disconnect the first listener
--- It will no longer respond to future Fire() calls
+### ❌ Disconnect a Listener
+## Disconnect a specific listener to stop receiving events.
+```lua
 connection1:Disconnect()
+```
 
--- Fire the signal again with a new message
--- Only Listener 2 will respond now
+###🔥Fire the signal again with a new message
+## Only Listener 2 will respond now
+```lua
 MySignal:Fire("Fired again!")
+```
 
 -- Output:
 -- Listener 2 received: Fired again!
 
--- Disconnect all remaining listeners (in this case, just Listener 2)
--- This clears all callbacks attached to the signal
+### 🔁 Disconnect All Listeners
+## Remove all listeners at once.
+```lua
 MySignal:DisconnectAll()
-
--- Fire the signal once more
--- No listeners are connected, so nothing happens
-MySignal:Fire("This won't be seen")
-
--- Output: (no output)
 ```
+
+### 🔥 Fire the Signal
+## This wont output anything.
+```lua
+MySignal:Fire("Event Fired!")
+```
+
+```md
+# Output: (no output)
+```
+
 ### NOTICE:
 ## To use events in other scripts you can make a module that holds the events.

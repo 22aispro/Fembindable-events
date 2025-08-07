@@ -1,1 +1,8 @@
-event.DisconnectAll took 599.997 ns
+local iterations = 5000
+local count = 500
+
+runBenchmark("DisconnectAll() [500 conns]", iterations, function()
+	local b = fembindables.new("Test")
+	for i = 1, count do b:Connect(emptyCallback) end
+	b:DisconnectAll()
+end)

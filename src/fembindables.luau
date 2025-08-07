@@ -1,5 +1,3 @@
--- !strict
-
 local fembindables = {}
 fembindables.__index = fembindables
 

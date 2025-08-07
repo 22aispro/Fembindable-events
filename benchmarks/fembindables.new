@@ -1,1 +1,3 @@
-.new took 700.005 ns
+runBenchmark("fembindables.new()", 100000, function()
+	fembindables.new("Test")
+end)

@@ -57,7 +57,7 @@ MySignal:Fire("Event Fired!")
 connection1:Disconnect()
 ```
 
-###🔥Fire the signal again with a new message
+### 🔥Fire the signal again with a new message
 ## Only Listener 2 will respond now
 ```lua
 MySignal:Fire("Fired again!")

@@ -46,9 +46,9 @@ MySignal:Fire("Event Fired!")
 ```
 
 ### Output:
-```md
-# Listener 1 received: Event Fired!
-# Listener 2 received: Event Fired!
+```
+Listener 1 received: Event Fired!
+Listener 2 received: Event Fired!
 ```
 
 ### ❌ Disconnect a Listener
@@ -64,8 +64,8 @@ MySignal:Fire("Fired again!")
 ```
 
 ### Output:
-```md
-# Listener 2 received: Fired again!
+```
+Listener 2 received: Fired again!
 ```
 
 ### 🔁 Disconnect All Listeners
@@ -80,8 +80,8 @@ MySignal:DisconnectAll()
 MySignal:Fire("Event Fired!")
 ```
 ### Output:
-```md
- # no output
+```
+ no output
 ```
 
 ### NOTICE:

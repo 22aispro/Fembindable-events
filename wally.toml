@@ -1,0 +1,11 @@
+[package]
+name = "al-ex427/fembindables"
+description = "fembindable events"
+version = "1.0.0"
+authors = ["22a", "al_ex427 (for wally package)"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+liscence = "MIT"
+exclude = ["benchmarks"]
+
+[dependencies]

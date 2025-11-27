@@ -1,3 +1,0 @@
-runBenchmark("fembindables.new()", 100000, function()
-	fembindables.new("Test")
-end)

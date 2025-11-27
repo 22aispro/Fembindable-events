@@ -1,4 +1,0 @@
-local b = fembindables.new("Test")
-runBenchmark("fembindables:Connect()", 50000, function()
-	b:Connect(emptyCallback)
-end)

@@ -4,19 +4,6 @@
 
 ---
 
-## 📊 Benchmarks
-
-| Operation                                | Iterations |   Total Time |  Time per Op |
-|-----------------------------------------|------------|---------------|---------------|
-| `fembindables.new()`                    | 100,000    | 0.0040 s     | 39.51 ns      |
-| `fembindables:Connect()`                | 50,000     | 0.0058 s     | 116.08 ns     |
-| `fembindables:Fire()` [0 connections]   | 20,000     | 0.0008 s     | 39.62 ns      |
-| `fembindables:Fire()` [1 connection]    | 20,000     | 0.0008 s     | 40.75 ns      |
-| `fembindables:Fire()` [100 connections] | 20,000     | 0.0008 s     | 42.11 ns      |
-| `Disconnect()` [last of 100]            | 10,000     | 0.1092 s     | 10.92 µs      |
-| `Disconnect()` [first of 100]           | 10,000     | 0.1073 s     | 10.73 µs      |
-| `DisconnectAll()` [500 connections]     | 5,000      | 0.2091 s     | 41.82 µs      |
-
 ---
 
 ## 🚀 Usage

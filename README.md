@@ -1,6 +1,6 @@
 # 🔗 fembindables
 
-**fembindables** is a fast and minimal signal (event) system for Lua-based environments like Roblox. It provides simple APIs for creating, connecting, firing, and disconnecting events efficiently.
+**fembindables** is a minimal signal (event) system for Lua-based environments like Roblox. It provides simple APIs for creating, connecting, firing, and disconnecting events efficiently.
 
 ---
 
